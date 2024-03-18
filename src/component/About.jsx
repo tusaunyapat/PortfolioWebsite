@@ -3,13 +3,13 @@ import Hero from "../assets/hero.png";
 
 function About() {
   return (
-    <div className="flex justify-center bg-primary text-white py-10">
+    <div className="flex justify-center bg-primary text-white py-20">
       <div className="flex flex-col md:flex-row justify-center w-10/12 ">
-        <div className="w-full md:w-8/12 flex flex-col text-justify">
+        <div className="w-full md:w-8/12 flex flex-col text-justify ">
           <p className="text-[2rem] font-bold my-3 px-4 border-l-4 border-white">
             About Me
           </p>
-          <p className="text-xl font-bold py-2">Hi there! I'm Tus Aunyapat,</p>
+          <p className="text-xl font-bold pt-4">Hi there! I'm Tus Aunyapat,</p>
           <p className="text-sm">
             <span>
               I am a second-year{" "}
@@ -46,7 +46,7 @@ function About() {
         </div>
         <div className="w-full md:w-5/12 hidden md:flex justify-center items-center ">
           <div className="absolute w-48 h-48 rounded-xl bg-blue-500 opacity-25"></div>
-          <img src={Hero} alt="Hero Image" className="z-10 w-3/4 p-5" />
+          <img src={Hero} alt="Hero Image" className="z-10 " />
         </div>
       </div>
     </div>

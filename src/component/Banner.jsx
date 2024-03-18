@@ -5,7 +5,7 @@ function Banner() {
   return (
     <div className="flex flex-col md:flex-row h-screen justify-center items-center">
       <div className="relative w-6/12 flex justify-center items-center ">
-        <div className="absolute w-72 h-72 rounded-xl bg-blue-500 opacity-25"></div>
+        <div className="absolute w-60 h-60 rounded-xl bg-blue-500 opacity-25"></div>
         <img src={Hero} alt="Hero Image" className="z-10 w-3/4 p-5" />
       </div>
 
@@ -23,10 +23,10 @@ function Banner() {
           </span>
         </p>
         <div className="flex flex-row justify-start my-4">
-          <div className="px-4 py-1 bg-primary text-white rounded-lg">
+          <div className="px-4 py-1 bg-primary text-white rounded-lg shadow-xl border-2 border-primary hover:bg-primarycom hover:text-white hover:border-2 hover:border-primarycom ">
             <p>resume</p>
           </div>
-          <div className="px-4 py-1 mx-4 bg-white text-black rounded-lg border-2 border-primary ">
+          <div className="px-4 py-1 mx-4 bg-white text-primary rounded-lg border-2 border-primary  shadow-xl hover:bg-primarycom hover:text-white hover:border-primarycom">
             <p>see projects</p>
           </div>
         </div>

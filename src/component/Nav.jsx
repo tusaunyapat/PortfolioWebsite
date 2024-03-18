@@ -39,7 +39,7 @@ function Nav() {
         <div className="flex text-md w-8/12 py-4">
           <p className="font-bold">AUNYAPAT</p>
         </div>
-        <ul className="md:flex flex-row justify-around w-8/12  hidden">
+        <ul className="md:flex flex-row justify-around w-6/12 lg:w-4/12  hidden">
           <NavItem to="/">Home</NavItem>
           <NavItem to="/about">About Me</NavItem>
           <NavItem to="/projects">Projects</NavItem>
