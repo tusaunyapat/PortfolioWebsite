@@ -1,5 +1,6 @@
 import React from "react";
-import Hero from "../assets/hero.png";
+import Hero from "../assets/about.png";
+import { Ref } from "react";
 
 function About() {
   return (
@@ -45,8 +46,11 @@ function About() {
           </p>
         </div>
         <div className="w-full md:w-5/12 hidden md:flex justify-center items-center ">
-          <div className="absolute w-48 h-48 rounded-xl bg-blue-500 opacity-25"></div>
-          <img src={Hero} alt="Hero Image" className="z-10 " />
+          <img
+            src={Hero}
+            alt="Hero Image"
+            className="z-10 rounded-full ml-12 w-72 h-72"
+          />
         </div>
       </div>
     </div>

@@ -3,10 +3,13 @@ import Hero from "../assets/hero.png";
 
 function Banner() {
   return (
-    <div className="flex flex-col md:flex-row h-screen justify-center items-center">
+    <div
+      className="flex flex-col md:flex-row h-screen justify-center items-center"
+      id="home"
+    >
       <div className="relative w-6/12 flex justify-center items-center ">
         <div className="absolute w-60 h-60 rounded-xl bg-blue-500 opacity-25"></div>
-        <img src={Hero} alt="Hero Image" className="z-10 w-3/4 p-5" />
+        <img src={Hero} alt="Hero Image" className="z-10 w-108 p-5" />
       </div>
 
       <div className="text-center sm:text-left flex flex-col justify-around md:justify-center  items-center sm:items-start  md:w-6/12 w-19/12  py-10 md:py-0">

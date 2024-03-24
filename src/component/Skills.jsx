@@ -1,13 +1,13 @@
 import React from "react";
-import { FaCode, FaMicrochip } from "react-icons/fa6";
+import { FaCode, FaMicrochip, FaRegLightbulb } from "react-icons/fa6";
 import { GoGraph } from "react-icons/go";
 
 function Skills() {
   const Skill = ({ icon, name }) => {
     return (
-      <div className="flex flex-col justify-center items-center w-full sm:w-[32%] bg-gray-200 py-8 my-1 px-2">
+      <div className="flex flex-col justify-start items-center w-full sm:w-[32%] bg-gray-200 py-8 my-1 px-2">
         <p className="text-2xl py-2">{icon}</p>
-        <p className="text-lg py-2 font-bold">{name}</p>
+        <p className="text-lg py-2 font-bold text-center">{name}</p>
       </div>
     );
   };
@@ -20,7 +20,11 @@ function Skills() {
           </p>
           <div className="flex flex-col sm:flex-row justify-between p-6 flex-wrap">
             <Skill icon={<FaCode />} name="Web development" />
-            <Skill icon={<GoGraph />} name="Data analytics" />
+            <Skill
+              icon={<FaRegLightbulb />}
+              name="Data Structure and Algorithms"
+            />
+            {/* <Skill icon={<GoGraph />} name="Data analytics" /> */}
             <Skill icon={<FaMicrochip />} name="Embedded System" />
           </div>
         </div>

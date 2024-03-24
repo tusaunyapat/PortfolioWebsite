@@ -1,5 +1,7 @@
 import React from "react";
 import TempImage from "../assets/temp.png";
+import CoffeeManPic from "../assets/coffeeman.png";
+import Portfolio from "../assets/portfolio.png";
 
 function Projects() {
   const projectData = [
@@ -11,27 +13,17 @@ function Projects() {
         "This project involves developing a complex game using Java and JavaFX with an Object-Oriented Programming (OOP) approach. It was a part of Programming Methodology subject during my time at university.",
       hasGitRepo: true,
       gitRepo: "",
-      image: TempImage,
+      image: CoffeeManPic,
     },
     {
       id: 2,
-      name: "CoffeeMan",
-      tools: ["Java", "JavaFX", "OOP"],
+      name: "PortFolio",
+      tools: ["React", "TailwindCSS"],
       description:
-        "This project involves developing a complex game using Java and JavaFX with an Object-Oriented Programming (OOP) approach. It was a part of Programming Methodology subject during my time at university.",
+        "This is the website I use it as my portfolio and my personal information.",
       hasGitRepo: true,
       gitRepo: "",
-      image: TempImage,
-    },
-    {
-      id: 3,
-      name: "CoffeeMan",
-      tools: ["Java", "JavaFX", "OOP"],
-      description:
-        "This project involves developing a complex game using Java and JavaFX with an Object-Oriented Programming (OOP) approach. It was a part of Programming Methodology subject during my time at university.",
-      hasGitRepo: true,
-      gitRepo: "",
-      image: TempImage,
+      image: Portfolio,
     },
   ];
 
@@ -46,7 +38,7 @@ function Projects() {
             <img
               src={proj.image}
               alt={proj.name}
-              className="py-4 rounded-[1.5rem]"
+              className="py-4 rounded-[1rem] h-56"
             />
             <p className="text-lg  font-bold py-1">{proj.name}</p>
             <div className="flex flex-row text-xs  ">
@@ -56,11 +48,11 @@ function Projects() {
                 </p>
               ))}
             </div>
-            <p className="pt-2 text-justify text-sm ">{proj.description}</p>
+            <p className="pt-2 text-justify text-sm h-28">{proj.description}</p>
             {proj.hasGitRepo ? (
               <a
                 href={proj.gitRepo}
-                className="p-2 w-full bg-white border-2 border-primarycom text-primarycom text-center rounded-lg hover:bg-primarycom hover:text-white my-4"
+                className="p-2  w-full bg-white border-2 border-primarycom text-primarycom text-center rounded-lg hover:bg-primarycom hover:text-white my-4"
               >
                 Repository
               </a>

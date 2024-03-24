@@ -23,11 +23,28 @@ function Experience() {
       description:
         "I start learning HTML, CSS, JS and then move to React with Vite. Including with framer motion and tailwindCSS.",
     },
+    {
+      id: 4,
+      title: "Make the Projects",
+      time: "2023",
+      description:
+        "I start build my own website for my portfolio and develop it still present. About the design, I create it by myself",
+    },
+    {
+      id: 5,
+      title: "First game project with JAVA",
+      time: "2023",
+      description:
+        "It is a part of one subject of studying in CU. It is a battle game.",
+    },
   ]);
 
   const render = () => {
     return (
-      <div className="items-center flex flex-col justify-center py-5">
+      <div
+        className="items-center flex flex-col justify-center py-5"
+        id="experience"
+      >
         <div className="w-11/12">
           {exp.map((event) => (
             <div
